@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚄 RailSync
 
-## Getting Started
+Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicação entre o usuário da CCR e o Centro de Comando Operacional (CCO), além de ter o papel importante de registrar a jornada de trabalho dos maquinistas, trazendo um grande diferencial, já que os mesmos necessitam bater o ponto na estação! Nossa ideia é trazer agilidade para os trabalhadores da CCR.
 
-First, run the development server:
+## 🌟 Funcionalidades Principais
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🖥️ Interface de fácil utilização com sete botões que facilitam a navegação e interação.
+- 📸 **Reconhecimento Facial** para registro de ponto dos usuários.
+- 📞 Contato Simplificado com o **CCO** para suporte rápido e eficiente.
+- 👥 Página de Integrantes do projeto:
+  - Davi Jorge
+  - Igor Neris
+  - Lucas Higuti
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Começando
+- Para rodar o projeto localmente, siga os passos abaixo:
+- Navegue através do terminal para  **cd railsync**
+- Instale as dependências **npm install**
+- Rode o projeto localmente **npm run dev**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💬 Contato
+- Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💬 Agradecimentos
+- Obrigado pelo seu tempo! Qualquer ideia/contribuição será bem vinda!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![image](https://github.com/user-attachments/assets/82df0bee-3023-4193-ac05-05847d1f9926)
