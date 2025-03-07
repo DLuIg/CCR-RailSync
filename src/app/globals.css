@@ -1,6 +1,2 @@
 /* Global styles */
-
-body {
-  margin: 0;
- 
-}
+@import 'tailwindcss';   /* Import do TailWind para que funcione a configuração  */
