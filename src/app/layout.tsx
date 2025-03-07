@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      > 
+        <Header  //Chamei meu componente Header que "supostamente" deveria aparecer em todas as páginas (na página de login nn vai aparecer isso eh um teste)
+        />
         {children}
       </body>
     </html>
