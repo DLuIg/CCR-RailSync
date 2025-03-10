@@ -28,8 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > 
-        <Header  //Chamei meu componente Header que "supostamente" deveria aparecer em todas as páginas (na página de login nn vai aparecer isso eh um teste)
-        />
+      
         {children}
       </body>
     </html>
