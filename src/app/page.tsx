@@ -1,22 +1,30 @@
-import Image from "next/image";
+"use client";
+
+import Image from "next/image"; // Import do Image do Next.js para que eu possa usar a imagem do logo
+import { useRouter } from 'next/navigation'; // Import do HOOK useNavigation para que eu possa usar o button para direcionar a outra página (funcionalidades)
+
 
 
 
 
 export default function Home() {
+  const router = useRouter(); //Hook que permite a navegação entre páginas
+  
+  const NavegarButton = () => {
+    router.push("/Funcionalidades"); //Função que direciona para a página de funcionalidades
+  };
+  
+  
   return (
     <>
       {/*Formatação QUASE igual mantida do CSS antigo! */}
       {/*Alterar button para novo componente */}
+      {/*Alterar fonte para Arial (dúvida) */}
 
-      <head>
-        <title>RailSync</title>
-        <meta name="description" content="RailSync" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"></link>
-         {/*HEAD Utilizado para importar a fonte do google */}
-      </head>
+      
 
-      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 ">  {/*Utilizei um FADE de branco para azul trazendo um aspecto mais clean*/}
+      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 font-arial " > 
+         {/*Utilizei um FADE de branco para azul trazendo um aspecto mais clean*/}
         <header className="flex justify-center">
           <Image
             src="/assets/logosemBackground.png"
@@ -48,11 +56,12 @@ export default function Home() {
 
 
               <a href="">Esqueci a senha...</a>
-              <button  /* Será substituido pelo componente BUTTON que faremos a seguir*/
-                type="submit"
-                className="p-2 mt-4 font-bold text-white bg-blue-600 rounded-md cursor-pointer w-[350px]"
+              <button /* Será substituido pelo componente BUTTON que faremos a seguir*/
+                onClick={NavegarButton}  
+                type="button"
+                className="p-2 mt-4 font-bold text-white bg-blue-600 rounded-md cursor-pointer w-[350px]  "
               >
-                LOGIN
+                LOGIN 
               </button>
             </form>
           </section>
