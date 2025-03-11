@@ -1,35 +1,40 @@
-import Link from 'next/link'; //Importando o Link do Next.js para conseguir  criar links entre as páginas
-import React from 'react'; //Importando o React
+import React from 'react';
+import Image from 'next/image';
 
+interface HeaderProps { //Essas são as propriedades que o componente Header aceita (ou seja, se eu for alterar o componente Header, eu tenho que passar essas propriedades)
+  leftLink: string; //Sendo assim, posso escolher para onde meu left link (return) vai ser direcionado para tal páigna
+  rightLink: string; //Mesmo acontece para o right link, mas sempre será direcionado para o menu
+  leftImageSrc: string;
+  rightImageSrc: string;
+  altTextLeft: string;
+  altTextRight: string;
+  title: string;
+}
 
+function Header({ //CONCEITO DE CLASSE EM POO (igual a passar PROPS para meu componente, posso altera-los e passar para o componente)
+  leftLink, 
+  rightLink, 
+  leftImageSrc, 
+  rightImageSrc, 
+  altTextLeft,  
+  altTextRight,
+  title 
+}: HeaderProps) {
 
-
-function Header() {  //Criando um componente Header que será utilizado nas páginas de Layout
+  
   return (
-    <>
-    <header className="bg-gray-800 text-white px-4 py-2 ">  {/*Criando um header com um fundo cinza escuro e texto branco para testar */}
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold">
-          <h3>MyLogo</h3>
-        </div>
-        <nav>
-          <ul className="flex space-x-4">
-            <li>
-              <h3>Home</h3>
-            </li>
-            <li>
-              <h3>About</h3>
-            </li>
-            <li>
-              <h3>Contact</h3>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header className="flex justify-between items-center bg-white text-3xl py-2.5 px-7.5">
+      <a href={leftLink}>
+        <Image src={leftImageSrc} alt={altTextLeft} width={20} height={20} className="w-8 h-8" /> {/* IMAGE SEMPRE vai pedir para especificar o Width, então jamais esquecer!*/}
+      </a>
 
-    </>
-    );
+      <div className="text-center text-gray-900">{title}</div>
+
+      <a href={rightLink}>
+        <Image src={rightImageSrc} alt={altTextRight} width={20} height={20} className="w-8 h-8" />  
+      </a>
+    </header>
+  );
 }
 
 export default Header;
