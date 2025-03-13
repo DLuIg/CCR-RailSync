@@ -30,7 +30,7 @@ function Header({ //CONCEITO DE CLASSE EM POO (igual a passar PROPS para meu com
         <Image src={leftImageSrc} alt={altTextLeft} width={20} height={20} className="w-8 h-8" /> {/* IMAGE SEMPRE vai pedir para especificar o Width, então jamais esquecer!*/}
       </a>
 
-      <div className="text-center text-gray-900">{title}</div>
+      <div className="text-center text-gray-900 font-sans font-thin">{title}</div>
 
       <a href={rightLink}>
         <Image src={rightImageSrc} alt={altTextRight} width={20} height={20} className="w-8 h-8" />  
