@@ -9,6 +9,7 @@ interface HeaderProps { //Essas são as propriedades que o componente Header ace
   altTextLeft: string;
   altTextRight: string;
   title: string;
+  
 }
 
 function Header({ //CONCEITO DE CLASSE EM POO (igual a passar PROPS para meu componente, posso altera-los e passar para o componente)
@@ -18,12 +19,13 @@ function Header({ //CONCEITO DE CLASSE EM POO (igual a passar PROPS para meu com
   rightImageSrc, 
   altTextLeft,  
   altTextRight,
-  title 
+  title,
+  
 }: HeaderProps) {
 
   
   return (
-    <header className="flex justify-between items-center bg-white text-3xl py-2.5 px-7.5">
+    <header className="flex justify-between items-center bg-white text-3xl py-2.5 px-7.5 font-inter">
       <a href={leftLink}>
         <Image src={leftImageSrc} alt={altTextLeft} width={20} height={20} className="w-8 h-8" /> {/* IMAGE SEMPRE vai pedir para especificar o Width, então jamais esquecer!*/}
       </a>
