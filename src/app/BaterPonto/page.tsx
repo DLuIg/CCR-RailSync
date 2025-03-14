@@ -22,7 +22,7 @@ export default function BaterPonto(){
             
             />
 
-            <div className='flex flex-col justify-center items-center p-5 h-screen font-thin bg-gradient-to-b from-white to-blue-300 gap-20'>
+            <div className='flex flex-col justify-center items-center p-5 h-screen font-thin bg-linear-to-r/oklab from-indigo-500 to-teal-400 gap-20'>
 
             <ButtonAcessar
             cor="bg-green-600"

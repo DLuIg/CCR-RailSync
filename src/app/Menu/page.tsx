@@ -15,7 +15,7 @@ export default function Menu () {
                 <main>
 
 
-                    <div className='flex flex-col items-center h-screen font-sans bg-blue-500  font-inter '>
+                    <div className='flex flex-col items-center h-screen  bg-linear-to-r/oklab from-indigo-500 to-teal-400  font-inter '>
 
                         <div className='mb-8 mt-8'>
                             <label  > 

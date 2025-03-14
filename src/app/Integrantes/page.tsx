@@ -21,9 +21,9 @@ export default function Integrantes() {
             
             ></Header>
             
-            <main className='flex flex-col justify-center items-center p-5 h-screen font-thin bg-gradient-to-b from-white to-blue-300'>
+            <main className='flex flex-col justify-center items-center p-5 h-screen font-thin bg-linear-to-r/oklab from-indigo-500 to-teal-400'>
                 <div className='boxIntegrantes flex justify-center font-sans gap-9 '>   
-                    <div className='cardIntegrante text-lg rounded-lg hover:border-2 hover:border-blue-400 hover:shadow-lg transition duration-300 ease-in-out'>
+                    <div className='cardIntegrante text-lg rounded-lg hover:border-2 hover:border-white hover:shadow-lg transition duration-300 ease-in-out'>
                         <Image 
                         src="/assets/lucas_higuti.jpg" 
                         width={200} 
@@ -36,7 +36,7 @@ export default function Integrantes() {
                         </div>
                     </div>
 
-                    <div className="cardIntegrante text-lg rounded-lg hover:border-2 hover:border-blue-400 hover:shadow-lg transition duration-300 ease-in-out">
+                    <div className="cardIntegrante text-lg rounded-lg hover:border-2 hover:border-white  hover:shadow-lg transition duration-300 ease-in-out">
                         <Image
                             src="/assets/mar.png"
                             width={200}
@@ -51,7 +51,7 @@ export default function Integrantes() {
                         </div>
 
 
-                    <div className='cardIntegrante text-lg rounded-lg hover:border-2 hover:border-blue-400 hover:shadow-lg transition duration-300 ease-in-out'>
+                    <div className='cardIntegrante text-lg rounded-lg hover:border-2 hover:border-white  hover:shadow-lg transition duration-300 ease-in-out'>
                         <Image 
                         src="/assets/igao.jpg" 
                         width={200} 

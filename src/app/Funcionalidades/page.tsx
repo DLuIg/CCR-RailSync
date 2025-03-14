@@ -9,7 +9,7 @@ import Header from "../components/Header/Header"
         <>
 
 
-        <main className="bg-gradient-to-b from-white to-blue-300 font-arial">
+        <main className="bg-linear-to-r/oklab from-indigo-500 to-teal-400 font-arial">
 
 
 
@@ -56,7 +56,10 @@ import Header from "../components/Header/Header"
                     height="h-[50px]"
                     link="/Integrantes"
                 
-                />              
+                />       
+
+                
+                       
 
 
             </div>
