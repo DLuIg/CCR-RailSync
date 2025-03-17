@@ -13,12 +13,19 @@ export default function ChatCCO(){
                 rightImageSrc="/assets/menu.png"
                 altTextLeft="Voltar"
                 altTextRight="Menu"
-                title="Funcionalidades"
+                title="Chat CCO"
                 /> 
 
-                <div>
-                
-                    <ButtonMsg/>
+                <div className="flex flex-col justify-center items-center p-5 h-screen font-thin bg-linear-to-r/oklab from-indigo-500 to-teal-400 gap-20">
+                   
+                    <ButtonMsg
+                    text="Iniciar"
+                    width="w-[350px]"
+                    height="h-[50px]"
+                    modalMessage="/ChatCCO"
+                    />
+
+                   
 
 
                 </div>
