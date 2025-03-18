@@ -41,7 +41,7 @@ export default function Integrantes() {
                                 />
                             </Link>
 
-                            <Link href="https://www.linkedin.com/in/igor-neris-soares-alves-197a232b5/">
+                            <Link href="https://www.linkedin.com/in/lucas-higuti-fontanezi-04a2a2274/">
                                 <Image
                                 src="/assets/iconLinkedin.png"
                                 alt='Linkedin'
