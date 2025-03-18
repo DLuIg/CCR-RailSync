@@ -4,30 +4,25 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ButtonAcessar from "./components/ButtonAcessar/ButtonAcessar";
 
-
 export default function Home() {
-  // USE STATE Utilizado para email senha e mensagem de erro
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [mensagemErro, setMensagemErro] = useState("");
 
-  // Função para validação de email
   const validarEmail = (email) => {
     return email.includes("@") && email.includes(".com");
   };
 
-  // Função para lidar com login
   const handleLogin = (e) => {
     e.preventDefault();
     if (!validarEmail(email)) {
       setMensagemErro("Inclua @ e .com no seu email");
       return;
     }
-    setMensagemErro(""); // Limpa mensagem de erro se validações passarem
+    setMensagemErro("");
 
-    // Verifica credenciais
     if (email === "maquinista@fiap.com.br" && senha === "123") {
-      window.location.href = "/Funcionalidades"; // Redireciona para a funcionalidade
+      window.location.href = "/Funcionalidades";
     } else {
       setMensagemErro("Credenciais inválidas");
     }
@@ -35,21 +30,18 @@ export default function Home() {
 
   return (
     <>
-      
-
-
-      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 font-arial ">
+      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 font-arial">
         <header className="flex justify-center">
           <Image
             src="/assets/logosemBackground.png"
             alt="RailSync Logo"
             width={350}
             height={80}
-            className="w-[350px]"
+            className="w-[250px] sm:w-[350px]" // Ajuste para responsividade
           />
         </header>
 
-        <main className="max-w-[430px] p-5">
+        <main className="max-w-[100%] p-5 flex flex-col">
           <section className="p-5 rounded-xl">
             <form className="flex flex-col" onSubmit={handleLogin}>
               <label htmlFor="email" className="text-gray-700">
@@ -84,16 +76,17 @@ export default function Home() {
                 <ButtonAcessar
                   cor="bg-blue-600"
                   texto="Login"
-                  width="w-[350px]"
+                  width="w-[300px] sm:w-[350px]" // Ajustando para manter a responsividade
                   height="h-[50px]"
-                  
                 />
               </div>
+
+              
             </form>
           </section>
         </main>
 
-        <footer className="mt-5 text-center text-black text-sm">
+        <footer className="mt-5 text-center text-black text-sm ">
           <p>&copy; 2025 RailSync. Todos os direitos reservados.</p>
         </footer>
       </div>
