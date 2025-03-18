@@ -13,6 +13,13 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
   - Lucas Higuti
 
 
+## 🖥️ Tecnologias 
+- O projeto foi criado utilizando o Node e Next.js.
+- Utilizamos o Typescript e Tailwind para a construção das páginas.
+
+## 📚 Bibliotecas
+- A biblioteca React-Modal foi utilizada para pop-ups ao clicar em botões.
+
 ## 🚀 Começando
 - Para rodar o projeto localmente, siga os passos abaixo:
 - Navegue através do terminal para  **cd railsync**
@@ -21,6 +28,11 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 
 
 
+## ⚠️ Aviso
+- Estamos em fase teste, sendo assim, existe um login de administrador para acessar testes na área de login
+- Escreva em Email: maquinista@fiap.com.br
+- Escreva em Senha: 123
+- Pronto, você terá acesso ao site!
 
 ## 💬 Contato
 - Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
