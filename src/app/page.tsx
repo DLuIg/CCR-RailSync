@@ -1,37 +1,45 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image"; // Import do Image do Next.js para que eu possa usar a imagem do logo
+import Image from "next/image";
 import ButtonAcessar from "./components/ButtonAcessar/ButtonAcessar";
 
-export default function Home() {
-  // Estado para guardar e exibir mensagens de erro
-  const [errorMessage, setErrorMessage] = useState<string>("");
 
-  // Função de validação de email utilizando Regex.
-  const validateEmail = (email: string): boolean => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+export default function Home() {
+  // USE STATE Utilizado para email senha e mensagem de erro
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [mensagemErro, setMensagemErro] = useState("");
+
+  // Função para validação de email
+  const validarEmail = (email) => {
+    return email.includes("@") && email.includes(".com");
   };
 
-  // Exemplo de como usar a função de validação
-  const handleEmailValidation = (e: React.FormEvent<HTMLFormElement>) => {
+  // Função para lidar com login
+  const handleLogin = (e) => {
     e.preventDefault();
-    
-    const emailInput = document.querySelector<HTMLInputElement>('input[type="email"]');
-    const email = emailInput?.value ?? "";
+    if (!validarEmail(email)) {
+      setMensagemErro("Inclua @ e .com no seu email");
+      return;
+    }
+    setMensagemErro(""); // Limpa mensagem de erro se validações passarem
 
-    if (validateEmail(email)) {
-      setErrorMessage(""); // Limpa a mensagem de erro se o email for válido
+    // Verifica credenciais
+    if (email === "maquinista@fiap.com.br" && senha === "123") {
+      window.location.href = "/Funcionalidades"; // Redireciona para a funcionalidade
     } else {
-      setErrorMessage("Por favor, insira um email válido com '@' e '.com'.");
+      setMensagemErro("Credenciais inválidas");
     }
   };
 
   return (
     <>
-      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 font-arial "> 
-         <header className="flex justify-center">
+      
+
+
+      <div className="flex flex-col items-center h-screen font-sans bg-gradient-to-b from-white to-blue-300 font-arial ">
+        <header className="flex justify-center">
           <Image
             src="/assets/logosemBackground.png"
             alt="RailSync Logo"
@@ -43,23 +51,30 @@ export default function Home() {
 
         <main className="max-w-[430px] p-5">
           <section className="p-5 rounded-xl">
-            <form className="flex flex-col" onSubmit={handleEmailValidation}>
-              <label htmlFor="email" className="text-gray-700">Email</label>
+            <form className="flex flex-col" onSubmit={handleLogin}>
+              <label htmlFor="email" className="text-gray-700">
+                Email
+              </label>
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
                 required
                 className="p-2 my-1 border border-gray-500 rounded-lg h-[50px] focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-300"
               />
-              
-              {/* Exibe a mensagem de erro, se existir */}
-              {errorMessage && (
-                <span className="text-red-500 mt-2">{errorMessage}</span>
+
+              {mensagemErro && (
+                <span className="text-red-500">{mensagemErro}</span>
               )}
 
-              <label htmlFor="password" className="mt-4 text-gray-700">Senha</label>
+              <label htmlFor="password" className="mt-4 text-gray-700">
+                Senha
+              </label>
               <input
                 type="password"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
                 placeholder="Senha"
                 required
                 className="p-2 my-1 border border-gray-500 rounded-lg h-[50px] focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-300"
@@ -69,9 +84,9 @@ export default function Home() {
                 <ButtonAcessar
                   cor="bg-blue-600"
                   texto="Login"
-                  width="w-[350px]" 
+                  width="w-[350px]"
                   height="h-[50px]"
-                  link="/Funcionalidades"
+                  
                 />
               </div>
             </form>
