@@ -27,18 +27,18 @@ export default function BaterPonto(){
             <ButtonAcessar
             cor="bg-green-600"
             texto="Iniciar"
-            width="w-[350px]"
+            width="w-[200px]"
             height="h-[50px]"
-            link="/ChatCCO" 
+            link="/RegistroJornada" 
             />
 
 
             <ButtonAcessar
             cor="bg-red-600"
             texto='Encerrar'
-            width="w-[350px]"
+            width="w-[200px]"
             height="h-[50px]"
-            link="/BaterPonto"
+            link="/Funcionalidades"
             
             
             />
