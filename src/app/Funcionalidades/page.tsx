@@ -7,6 +7,9 @@ import Header from "../components/Header/Header"
  function Funcionalidades() {
     return(
         <>
+        <head>
+            <title>Funcionalidades</title>
+        </head>
 
 
         <main className="bg-linear-to-r/oklab from-indigo-500 to-teal-400 font-arial">
@@ -33,26 +36,26 @@ import Header from "../components/Header/Header"
 
             
                 <ButtonAcessar
-                    cor="bg-blue-600"
+                    cor="bg-white"
                     texto="Chat CCO"
-                    width="w-[350px]"
+                   width="w-[250px]"
                     height="h-[50px]"
                     link="/ChatCCO"   
                  />
                
                 <ButtonAcessar
-                    cor="bg-blue-600"
+                    cor="bg-white"
                     texto="Jornada"
-                    width="w-[350px]"
+                    width="w-[250px]"
                     height="h-[50px]"
                     link="/BaterPonto"
                 
                 />     
 
                 <ButtonAcessar
-                    cor="bg-blue-600"
+                    cor="bg-white"
                     texto="Integrantes"
-                    width="w-[350px]"
+                    width="w-[250px]"
                     height="h-[50px]"
                     link="/Integrantes"
                 
