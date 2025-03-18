@@ -11,13 +11,13 @@ interface ButtonAcessarProps {
 function ButtonAcessar({
   cor,
   texto,
-  width = 'w-full sm:w-auto', // Default para responsividade
-  height = 'text-lg sm:text-xl', // Adicionada responsividade para o texto
+  width, 
+  height , 
   link,
 }: ButtonAcessarProps) {
   const buttonElement = (
     <button
-      className={`${cor} ${width} ${height} py-2 sm:py-3 px-4 sm:px-5 rounded-md transition duration-300 ease-in-out text-black font-medium hover:bg-gray-300 cursor-pointer hover:shadow-lg hover:scale-105`}
+      className={`${cor} ${width} ${height} py-1  px-4  rounded-md transition duration-300 ease-in-out text-black font-medium hover:bg-gray-300 cursor-pointer hover:shadow-lg hover:scale-105  `}
     >
       {texto}
     </button>
