@@ -34,10 +34,12 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 - Escreva em Senha: 123
 - Pronto, você terá acesso ao site!
 
-## 💬 Contato
-- Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
+
+## 📼 Apresentação do Projeto
+- Vídeo do projeto funcionando: [text](https://youtu.be/Tocc1AXV4AI)
 
 ## 💬 Agradecimentos
+- Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
 - Obrigado pelo seu tempo! Qualquer ideia/contribuição será bem vinda!
 
 ![image](https://github.com/user-attachments/assets/82df0bee-3023-4193-ac05-05847d1f9926)
