@@ -36,7 +36,7 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 
 
 ## 📼 Apresentação do Projeto
-- Vídeo do projeto funcionando: [text](https://youtu.be/Tocc1AXV4AI)
+- Vídeo do projeto funcionando: [railsync](https://youtu.be/Tocc1AXV4AI)
 
 ## 💬 Agradecimentos
 - Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
