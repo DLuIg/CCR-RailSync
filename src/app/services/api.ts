@@ -5,3 +5,7 @@ export const API_BASE = isBrowser
     : "http://localhost:8080/";
 
 ;
+export const getHeaders = () => ({
+    "Content-Type": "application/json",
+    "x-api-key": "1234",
+});
