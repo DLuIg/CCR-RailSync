@@ -5,15 +5,17 @@ import Image from "next/image";
 import ButtonAcessar from "./components/ButtonAcessar/ButtonAcessar";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
-  const [mensagemErro, setMensagemErro] = useState("");
+  const [email, setEmail] = useState<string>("");
+  const [senha, setSenha] = useState<string>("");
+  const [mensagemErro, setMensagemErro] = useState<string>("");
 
-  const validarEmail = (email) => {
+  
+  const validarEmail = (email: string): boolean => {
     return email.includes("@") && email.includes(".com");
   };
 
-  const handleLogin = (e) => {
+  
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validarEmail(email)) {
       setMensagemErro("Inclua @ e .com no seu email");
@@ -37,7 +39,7 @@ export default function Home() {
             alt="RailSync Logo"
             width={350}
             height={80}
-            className="w-[250px] sm:w-[350px]" // Ajuste para responsividade
+            className="w-[250px] sm:w-[350px]" 
           />
         </header>
 
@@ -80,8 +82,6 @@ export default function Home() {
                   height="h-[50px]"
                 />
               </div>
-
-              
             </form>
           </section>
         </main>
