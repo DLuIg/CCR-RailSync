@@ -16,7 +16,7 @@ const ButtonMSG: React.FC<ButtonMSGProps> = ({ text, width, height, slug }) => {
 
   const handleButtonClick = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/ChatCCO/${slug}`, {
+      const response = await fetch(`http://api-java-production-db2b.up.railway.app/ChatCCO/${slug}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
