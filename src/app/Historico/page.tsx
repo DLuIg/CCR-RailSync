@@ -46,7 +46,7 @@ function Historico() {
     <>
       <main className="bg-linear-to-r/oklab from-indigo-500 to-teal-400 font-arial min-h-screen">
         <Header
-          leftLink="/"
+          leftLink="/Funcionalidades"
           rightLink="/Menu"
           leftImageSrc="/assets/return.png"
           rightImageSrc="/assets/menu.png"
