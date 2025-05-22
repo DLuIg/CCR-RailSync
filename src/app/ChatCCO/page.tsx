@@ -1,12 +1,13 @@
-import React from "react"
-import Header from "../components/Header/Header"
-import ButtonMsg from "../components/ButtonMsg/ButtonMsg"
+'use client';
+import React from "react";
+import Header from "../components/Header/Header";
+import ButtonMsg from "../components/ButtonMsg/ButtonMsg";
 
 export default function ChatCCO() {
-    return(
+    return (
         <>
             <main>
-                <Header 
+                <Header
                     leftLink="/Funcionalidades"
                     rightLink="/Menu"
                     leftImageSrc="/assets/return.png"
@@ -14,7 +15,7 @@ export default function ChatCCO() {
                     altTextLeft="Voltar"
                     altTextRight="Menu"
                     title="Chat CCO"
-                /> 
+                />
 
                 <div className="flex flex-col justify-center items-center p-5 h-screen bg-gradient-to-r from-indigo-500 to-teal-400 gap-15">
                     <div className="grid grid-cols-2 gap-15">
@@ -22,54 +23,54 @@ export default function ChatCCO() {
                             text="Portas com problemas"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="portas com problemas"
+                            slug="PORTAS_COM_PROBLEMAS"
                         />
                         <ButtonMsg
                             text="Emergência Médica"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="emergência Médica"
+                            slug="EMERGENCIA_MEDICA"
+
                         />
                         <ButtonMsg
                             text="Falhas técnicas"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="falhas técnicas"
+                            slug="FALHAS_TECNICAS"
                         />
                         <ButtonMsg
                             text="Problemas na via"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="problemas na via"
+                            slug="PROBLEMAS_NA_VIA"
                         />
                         <ButtonMsg
                             text="Objeto/Pessoas na via"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="objeto/pessoas na via"
+                            slug="OBJETO_PESSOAS_NA_VIA"
                         />
                         <ButtonMsg
                             text="Anomalia nos freios"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="anomalia nos freios"
+                            slug="ANOMALIA_NOS_FREIOS"
                         />
                         <ButtonMsg
                             text="Falha na comunicação (Rádio)"
                             width="w-[150px]"
                             height="h-[80px]"
-                            modalMessage="falha na comunicação (Rádio)"
+                            slug="FALHA_NA_COMUNICACAO_RADIOS"
                         />
-
                         <ButtonMsg
                             text="Alerta de segurança"
                             width="w-[150px]"
                             height="h-[60px]"
-                            modalMessage="alerta de segurança"
+                            slug="ALERTA_DE_SEGURANCA"
                         />
                     </div>
                 </div>
             </main>
         </>
-    )
+    );
 }
