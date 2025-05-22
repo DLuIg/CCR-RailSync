@@ -1,9 +1,9 @@
-'use client'; // Isso é importante para componentes que usam hooks no Next.js 13+
+'use client'; 
 
 import React, { useEffect, useState } from 'react';
 import Header from "../components/Header/Header";
 
-// Definindo a interface para a estrutura de uma mensagem (ajuste conforme a sua API)
+
 interface Message {
   id: string; 
   nome: string;
@@ -35,7 +35,7 @@ function Historico() {
         console.error("Falha ao carregar histórico:", err);
         setError('Não foi possível carregar o histórico de mensagens.');
       } finally {
-        setLoading(false); // Finaliza o estado de carregamento
+        setLoading(false); 
       }
     };
 
@@ -76,15 +76,14 @@ function Historico() {
             <div className="bg-white rounded-lg shadow-xl p-6">
               <ul className="space-y-4">
                 {messages.map((message) => {
-                  // Função para substituir underscores por espaços
+                  
                   const formattedName = message.nome.replace(/_/g, ' '); 
 
                   return (
                     <li key={message.id} className="border-b border-gray-200 pb-4 last:border-b-0">
                       <p className="text-gray-800 font-semibold text-lg">{formattedName}</p> {/* Usando a variável formatada */}
                       <p className="text-gray-600">ID: {message.id}</p>
-                      {/* Você pode adicionar outras informações da mensagem aqui, se desejar */}
-                      {/* Ex: <p className="text-gray-500 text-sm mt-1">Enviado em: {new Date(message.timestamp).toLocaleString()}</p> */}
+                      
                     </li>
                   );
                 })}
