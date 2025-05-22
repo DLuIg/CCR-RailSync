@@ -1,5 +1,6 @@
 'use client';
 
+import { API_BASE } from '@/app/services/api';
 import React from 'react';
 
 // Definindo a interface para as props
@@ -16,7 +17,7 @@ const ButtonMSG: React.FC<ButtonMSGProps> = ({ text, width, height, slug }) => {
 
   const handleButtonClick = async () => {
     try {
-      const response = await fetch(`http://api-java-production-db2b.up.railway.app/ChatCCO/${slug}`, {
+      const response = await fetch(`${API_BASE}/ChatCCO/${slug}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

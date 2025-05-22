@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Header from "../components/Header/Header";
-
+import { API_BASE } from '@/app/services/api'; // Importando a constante API_BASE
 
 interface Message {
   id: string; 
@@ -17,7 +17,7 @@ function Historico() {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const response = await fetch('http://localhost:8080/ChatCCO/Historico', { 
+        const response = await fetch(`${API_BASE}/ChatCCO/Historico`, {  
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
