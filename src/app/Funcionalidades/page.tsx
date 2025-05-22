@@ -59,7 +59,15 @@ import Header from "../components/Header/Header"
                     height="h-[50px]"
                     link="/Integrantes"
                 
-                />       
+                />      
+
+                <ButtonAcessar
+                    cor="bg-white"
+                    texto="Relatório"
+                    width="w-[250px]"
+                    height="h-[50px]"
+                    link="/Historico" 
+                />
 
                 
                        
