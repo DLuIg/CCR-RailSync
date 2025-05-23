@@ -28,15 +28,20 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 
 
 
+## Link do vercel para entrar no site 
+
+- [text](https://ccr-rail-sync-git-master-dluigs-projects.vercel.app?_vercel_share=RRSel09mAmTQDRAT6BAo1WnFWV5cNj4W)
+
+
 ## ⚠️ Aviso
-- Estamos em fase teste, sendo assim, existe um login de administrador para acessar testes na área de login
+
 - Escreva em Email: maquinista@fiap.com.br
 - Escreva em Senha: 123
 - Pronto, você terá acesso ao site!
 
 
 ## 📼 Apresentação do Projeto
-- Vídeo do projeto funcionando: [railsync](https://youtu.be/Tocc1AXV4AI)
+- Vídeo do projeto funcionando: [text](https://youtu.be/-vKAL2PTstg)
 
 ## 💬 Agradecimentos
 - Envie um email para coringoes.dlig@gmail.com para entrar em contato conosco!
