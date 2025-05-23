@@ -30,7 +30,7 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 
 ## Link do vercel para entrar no site 
 
-- [text](https://ccr-rail-sync-git-master-dluigs-projects.vercel.app?_vercel_share=RRSel09mAmTQDRAT6BAo1WnFWV5cNj4W)
+- [VERCEL](https://ccr-rail-sync-git-master-dluigs-projects.vercel.app?_vercel_share=RRSel09mAmTQDRAT6BAo1WnFWV5cNj4W)
 
 
 ## ⚠️ Aviso
@@ -39,6 +39,9 @@ Bem-vindo ao **RailSync**! Este é um site inovador para facilitar a comunicaç�
 - Escreva em Senha: 123
 - Pronto, você terá acesso ao site!
 
+
+## Link do repositório
+- [REPOSITÓRIO GITHUB](https://github.com/DLuIg/CCR-RailSync/tree/master)
 
 ## 📼 Apresentação do Projeto
 - Vídeo do projeto funcionando: [text](https://youtu.be/-vKAL2PTstg)
